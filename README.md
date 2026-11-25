@@ -9,7 +9,7 @@ This repository contains the numerical data supporting the manuscript. All masse
 
 For reference, the experimental vacuum mass of the neutral pion is
 
-m_{\pi^0}^{\mathrm{vac}} = 0.134{GeV}.
+$m_{\pi^0}^{\mathrm{vac}} \simeq 0.135\ \mathrm{GeV}$.
 
 
 ## Files

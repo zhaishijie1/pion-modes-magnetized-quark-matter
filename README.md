@@ -13,7 +13,7 @@ The manuscript uses the neutral-pion vacuum pole mass
 m_{\pi^0}^{\mathrm{vac}} = 0.134\;\mathrm{GeV},
 \]
 
-defined in the model at \(T=B=\mu_5=0\). This is the model vacuum pole mass used for the normalization in Fig. 3; it should not be interpreted as the experimental neutral-pion mass.
+defined in the model at \(T=B=\mu_5=0\). This is the model vacuum pole mass used for the normalization in Fig. 3.
 
 The file `neutral_pion_mass_magnetic_field_T0.csv` stores the unnormalized pole mass \(m_{\pi^0}\). To reproduce Fig. 3, calculate
 
@@ -33,7 +33,7 @@ The file `neutral_pion_mass_magnetic_field_T0.csv` stores the unnormalized pole 
 
 - `charged_pion_inverse_propagator.csv` — real part of the inverse charged-pion propagator, \(\operatorname{Re}\mathcal{F}_{\pi^+}(\omega)\), in the lowest mesonic Ritus channel at `eB = 1 GeV²`, `mu5 = 0.20 GeV`, and `q3 = 0`, for `T = 0, 0.18, 0.25 GeV`. Columns: `omega_GeV`, `T_GeV`, `eB_GeV2`, `mu5_GeV`, `q3_GeV`, and `Re_inverse_propagator_F_pi_plus`.
 
-- `charged_pion_mass_temperature.csv` — selected positive-energy real-axis solutions defining the charged-pion mass in the lowest mesonic Ritus channel at `eB = 1 GeV²`, for `mu5 = 0, 0.05, 0.10, 0.15, 0.20 GeV`. The mass is evaluated at `q3 = 0`. Columns: `T_GeV`, `eB_GeV2`, `mu5_GeV`, `m_pi_plus_GeV`, `segment_id`, and `source_status`. The `segment_id` distinguishes separate displayed solution segments. Entries recorded as `Null` in the source are retained as empty values with `source_status = Null_in_source`; these entries are missing source values, not zero masses.
+- `charged_pion_mass_temperature.csv` — selected positive-energy real-axis solutions defining the charged-pion mass in the lowest mesonic Ritus channel at `eB = 1 GeV²`, for `mu5 = 0, 0.05, 0.10, 0.15, 0.20 GeV`. The mass is evaluated at `q3 = 0`. Columns: `T_GeV`, `eB_GeV2`, `mu5_GeV`, `m_pi_plus_GeV`, `segment_id`, and `source_status`. The `segment_id` distinguishes separate displayed solution segments. Entries recorded as `Null` in the source are retained as empty values with `source_status = Null_in_source`.
 
 - `charged_pion_Unitary_threshold_temperature.csv` — lowest physical quark-antiquark Unitary threshold versus temperature at `eB = 1 GeV²`, for the same five values of `mu5` used in the charged-pion temperature scan. Columns: `T_GeV`, `eB_GeV2`, `mu5_GeV`, and `lowest_physical_Unitary_threshold_GeV`.
 
@@ -57,5 +57,3 @@ The lattice-QCD points displayed in Fig. 8 are taken from Ref. [Ding2026] and ar
 ## Notes for reading the data
 
 - The suffixes `_GeV` and `_GeV2` indicate the units of the corresponding columns.
-- Empty fields in `charged_pion_mass_temperature.csv` represent `Null` entries in the source and must not be interpreted as numerical zeros.
-- Different `segment_id` values denote separate real-axis solution segments. Preserve these segments when reproducing the charged-pion mass curves; do not join them into a single continuous curve across the gaps.
